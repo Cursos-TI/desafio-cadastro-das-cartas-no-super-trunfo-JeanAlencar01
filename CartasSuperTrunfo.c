@@ -24,7 +24,9 @@ int main() {
     char Pais[25];
     char Estado[25]; 
     char Cidade[50];
-
+    float Densidade_Populacional = População / Área;
+    float PIB_per_capita = PIB / População;
+    
         printf ("Cada país será dividido em oito estados, identificados pelas letras de A a H.\n Cada estado terá quatro cidades, numeradas de 1 a 4.\n A combinação da letra do estado e o número da cidade define o código da carta\n (por exemplo, A01, A02 , B01, B02).\n");
 
         printf ("Digite o Estado\n");
@@ -48,6 +50,10 @@ int main() {
         printf ("Digite o Número de Pontos Turísticos \n");
         scanf ("%d", &Pontos_Turísticos);
 
+        Densidade_Populacional = (float) População / Área; 
+        PIB_per_capita = (float) PIB / População;
+
+
         printf ("Sua Carta foi Cadastrada com Sucesso!\n");
         
         printf ("Estado: %s\n", Estado);
@@ -57,6 +63,9 @@ int main() {
         printf ("Área km²: %f\n", Área);
         printf ("PIB: %f\n", PIB);
         printf ("Número de Pontos Turísticos: %d\n", Pontos_Turísticos);
+        printf ("Densidade Populacional: %f\n", Densidade_Populacional);
+        printf ("PIB per Capita: %f\n", PIB_per_capita);
+
 
 
 
